@@ -26,10 +26,16 @@ namespace CalculatorApp_Mihail_v1_04
 
         private void ButtonAboutForm_Click(object sender, EventArgs e)
         {
+           
+
             if (formAbout.Visible == true)
                 formAbout.Visible = false;
             else
+            {
+                formAbout = new FormAbout();
                 formAbout.Visible = true;
+            }
+
         }
 
         private void ButtonCalculatorForm_Click(object sender, EventArgs e)
@@ -37,7 +43,11 @@ namespace CalculatorApp_Mihail_v1_04
             if (formCalculator.Visible == true)
                 formCalculator.Visible = false;
             else
+            {
+                formCalculator = new FormCalculator();
                 formCalculator.Visible = true;
+            }
+           
         }
     }
 }
