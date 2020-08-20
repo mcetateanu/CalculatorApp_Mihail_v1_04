@@ -32,7 +32,7 @@ namespace CalculatorApp_Mihail_v1_04
                 formAbout.Visible = false;
             else
             {
-                formAbout = new FormAbout();
+                if (formAbout.IsDisposed) formAbout = new FormAbout();
                 formAbout.Visible = true;
             }
 
@@ -44,7 +44,7 @@ namespace CalculatorApp_Mihail_v1_04
                 formCalculator.Visible = false;
             else
             {
-                formCalculator = new FormCalculator();
+                if (formCalculator.IsDisposed) formCalculator = new FormCalculator();
                 formCalculator.Visible = true;
             }
            
