@@ -28,87 +28,96 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.ButonAdunare = new System.Windows.Forms.Button();
+            this.ButonScadere = new System.Windows.Forms.Button();
+            this.ButonInmultire = new System.Windows.Forms.Button();
+            this.ButonImpartire = new System.Windows.Forms.Button();
+            this.TextBoxRezultat = new System.Windows.Forms.TextBox();
+            this.NumericUpDownTermen1 = new System.Windows.Forms.NumericUpDown();
+            this.NumericUpDownTermen2 = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericUpDownTermen1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericUpDownTermen2)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // ButonAdunare
             // 
-            this.button1.Location = new System.Drawing.Point(123, 181);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ButonAdunare.Location = new System.Drawing.Point(123, 181);
+            this.ButonAdunare.Name = "ButonAdunare";
+            this.ButonAdunare.Size = new System.Drawing.Size(75, 23);
+            this.ButonAdunare.TabIndex = 0;
+            this.ButonAdunare.Text = "Adunare";
+            this.ButonAdunare.UseVisualStyleBackColor = true;
+            this.ButonAdunare.Click += new System.EventHandler(this.ButonAdunare_Click);
             // 
-            // button2
+            // ButonScadere
             // 
-            this.button2.Location = new System.Drawing.Point(277, 180);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.ButonScadere.Location = new System.Drawing.Point(277, 180);
+            this.ButonScadere.Name = "ButonScadere";
+            this.ButonScadere.Size = new System.Drawing.Size(75, 23);
+            this.ButonScadere.TabIndex = 1;
+            this.ButonScadere.Text = "Scadere";
+            this.ButonScadere.UseVisualStyleBackColor = true;
+            this.ButonScadere.Click += new System.EventHandler(this.ButonScadere_Click);
             // 
-            // button3
+            // ButonInmultire
             // 
-            this.button3.Location = new System.Drawing.Point(451, 180);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.ButonInmultire.Location = new System.Drawing.Point(451, 180);
+            this.ButonInmultire.Name = "ButonInmultire";
+            this.ButonInmultire.Size = new System.Drawing.Size(75, 23);
+            this.ButonInmultire.TabIndex = 2;
+            this.ButonInmultire.Text = "Inmultire";
+            this.ButonInmultire.UseVisualStyleBackColor = true;
+            this.ButonInmultire.Click += new System.EventHandler(this.ButonInmultire_Click);
             // 
-            // button4
+            // ButonImpartire
             // 
-            this.button4.Location = new System.Drawing.Point(646, 180);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.ButonImpartire.Location = new System.Drawing.Point(646, 180);
+            this.ButonImpartire.Name = "ButonImpartire";
+            this.ButonImpartire.Size = new System.Drawing.Size(75, 23);
+            this.ButonImpartire.TabIndex = 3;
+            this.ButonImpartire.Text = "Impartire";
+            this.ButonImpartire.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ButonImpartire.UseVisualStyleBackColor = true;
+            this.ButonImpartire.Click += new System.EventHandler(this.ButonImpartire_Click);
             // 
-            // textBox1
+            // TextBoxRezultat
             // 
-            this.textBox1.Location = new System.Drawing.Point(467, 351);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 4;
+            this.TextBoxRezultat.Location = new System.Drawing.Point(467, 351);
+            this.TextBoxRezultat.Name = "TextBoxRezultat";
+            this.TextBoxRezultat.Size = new System.Drawing.Size(100, 22);
+            this.TextBoxRezultat.TabIndex = 4;
+            this.TextBoxRezultat.TextChanged += new System.EventHandler(this.TextBoxRezultat_TextChanged);
             // 
-            // numericUpDown1
+            // NumericUpDownTermen1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(297, 83);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown1.TabIndex = 5;
+            this.NumericUpDownTermen1.Location = new System.Drawing.Point(297, 83);
+            this.NumericUpDownTermen1.Name = "NumericUpDownTermen1";
+            this.NumericUpDownTermen1.Size = new System.Drawing.Size(120, 22);
+            this.NumericUpDownTermen1.TabIndex = 5;
+            this.NumericUpDownTermen1.ValueChanged += new System.EventHandler(this.NumericUpDownTermen1_ValueChanged);
             // 
-            // numericUpDown2
+            // NumericUpDownTermen2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(571, 83);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown2.TabIndex = 6;
+            this.NumericUpDownTermen2.Location = new System.Drawing.Point(571, 83);
+            this.NumericUpDownTermen2.Name = "NumericUpDownTermen2";
+            this.NumericUpDownTermen2.Size = new System.Drawing.Size(120, 22);
+            this.NumericUpDownTermen2.TabIndex = 6;
+            this.NumericUpDownTermen2.ValueChanged += new System.EventHandler(this.NumericUpDownTermen2_ValueChanged);
             // 
             // FormCalculator
             // 
             this.ClientSize = new System.Drawing.Size(959, 495);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.NumericUpDownTermen2);
+            this.Controls.Add(this.NumericUpDownTermen1);
+            this.Controls.Add(this.TextBoxRezultat);
+            this.Controls.Add(this.ButonImpartire);
+            this.Controls.Add(this.ButonInmultire);
+            this.Controls.Add(this.ButonScadere);
+            this.Controls.Add(this.ButonAdunare);
             this.Name = "FormCalculator";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            this.Load += new System.EventHandler(this.FormCalculator_Load_1);
+            ((System.ComponentModel.ISupportInitialize)(this.NumericUpDownTermen1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericUpDownTermen2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,17 +126,13 @@
         #endregion
 
        
+       
         private System.Windows.Forms.Button ButonAdunare;
         private System.Windows.Forms.Button ButonScadere;
         private System.Windows.Forms.Button ButonInmultire;
         private System.Windows.Forms.Button ButonImpartire;
         private System.Windows.Forms.TextBox TextBoxRezultat;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown NumericUpDownTermen1;
+        private System.Windows.Forms.NumericUpDown NumericUpDownTermen2;
     }
 }
