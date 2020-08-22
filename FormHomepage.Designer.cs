@@ -61,6 +61,7 @@
             this.Controls.Add(this.ButtonCalculatorForm);
             this.Name = "FormHomepage";
             this.Text = "Homepage";
+            this.Load += new System.EventHandler(this.FormHomepage_Load);
             this.ResumeLayout(false);
 
         }

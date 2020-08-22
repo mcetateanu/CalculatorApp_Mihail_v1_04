@@ -49,5 +49,10 @@ namespace CalculatorApp_Mihail_v1_04
             }
            
         }
+
+        private void FormHomepage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

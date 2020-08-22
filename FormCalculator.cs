@@ -16,5 +16,15 @@ namespace CalculatorApp_Mihail_v1_04
         {
             InitializeComponent();
         }
+       
+
+        private void FormCalculator_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+       
     }
-}
+    }
+
