@@ -35,22 +35,51 @@ namespace CalculatorApp_Mihail_v1_04
 
         private void ButonAdunare_Click(object sender, EventArgs e)
         {
+            decimal termen1 = NumericUpDownTermen1.Value;
+            decimal termen2 = NumericUpDownTermen2.Value;
+
+            decimal rezultat = termen1 + termen2;
+            TextBoxRezultat.Text = rezultat.ToString();
 
         }
 
         private void ButonScadere_Click(object sender, EventArgs e)
         {
+            decimal termen1 = NumericUpDownTermen1.Value;
+            decimal termen2 = NumericUpDownTermen2.Value;
 
+            decimal rezultat = termen1 - termen2;
+            TextBoxRezultat.Text = rezultat.ToString();
         }
 
         private void ButonInmultire_Click(object sender, EventArgs e)
         {
+            decimal termen1 = NumericUpDownTermen1.Value;
+            decimal termen2 = NumericUpDownTermen2.Value;
 
+            decimal rezultat = termen1 * termen2;
+            TextBoxRezultat.Text = rezultat.ToString();
         }
 
         private void ButonImpartire_Click(object sender, EventArgs e)
         {
+            decimal termen1 = NumericUpDownTermen1.Value;
+            decimal termen2 = NumericUpDownTermen2.Value;
 
+           
+            try
+            {
+                decimal rezultat = termen1 / termen2;
+               
+                TextBoxRezultat.Text = rezultat.ToString();
+            }
+            catch (Exception )
+            {
+                string message = "Please, DO NOT divide by 0 <:slight_smile:> (again & again!)  :-) ";
+                string title = "Divide by 0";
+                MessageBox.Show(message, title);
+            }
+           
         }
 
         private void TextBoxRezultat_TextChanged(object sender, EventArgs e)

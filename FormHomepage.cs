@@ -18,10 +18,14 @@ namespace CalculatorApp_Mihail_v1_04
         public FormHomepage()
         {
             InitializeComponent();
-            formAbout = new FormAbout();
-            formAbout.Visible = false;
-            formCalculator = new FormCalculator();
-            formCalculator.Visible = false;
+            formAbout = new FormAbout
+            {
+                Visible = false
+            };
+            formCalculator = new FormCalculator
+            {
+                Visible = false
+            };
         }
 
         private void ButtonAboutForm_Click(object sender, EventArgs e)
