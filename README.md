@@ -2,7 +2,7 @@
 
  12.aug.2020 -start learning DotNET.
  
- Aceasta aplicatie deocamdata nu calculeaza nimic...
+ Aceasta aplicatie deocamdata nu calculeaza nimic...nou. !!!
  Totusi maine este o noua zi!
 
 //will be continued...
