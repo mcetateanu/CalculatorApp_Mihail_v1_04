@@ -20,7 +20,7 @@ namespace CalculatorApp_Mihail_v1_04
 
         private void FormCalculator_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void NumericUpDownTermen1_ValueChanged(object sender, EventArgs e)
@@ -66,30 +66,49 @@ namespace CalculatorApp_Mihail_v1_04
             decimal termen1 = NumericUpDownTermen1.Value;
             decimal termen2 = NumericUpDownTermen2.Value;
 
-           
-            try
+            switch (termen2)
             {
-                decimal rezultat = termen1 / termen2;
-               
-                TextBoxRezultat.Text = rezultat.ToString();
+                case 0:
+                    string rezultat_err = "Try again later, Ali...gator";
+                    TextBoxRezultat.Text = rezultat_err.ToString();
+                    break;
+
+                default:
+                    decimal rezultat = termen1 / termen2;
+                    TextBoxRezultat.Text = rezultat.ToString();
+                    break;
+
             }
-            catch (Exception )
-            {
-                string message = "Please, DO NOT divide by 0 <:slight_smile:> (again & again!)  :-) ";
-                string title = "Divide by 0";
-                MessageBox.Show(message, title);
+                    /*
+                     try
+                     {
+                         decimal rezultat = termen1 / termen2;
+
+                         TextBoxRezultat.Text = rezultat.ToString();
+                     }
+                     catch (Exception )
+                     {
+                         string message1 = "Please, DO NOT divide by 0 <:slight_smile:> (again & again!)";
+                         string message2 = " - Err 605 -" ;
+                         string message = $" {message1} {message2}";
+                         string title = "Divide by 0";
+                         MessageBox.Show(message, title);
+                     }
+
+                     */
+
+
             }
-           
-        }
 
         private void TextBoxRezultat_TextChanged(object sender, EventArgs e)
         {
-
+           
         }
 
         private void FormCalculator_Load_1(object sender, EventArgs e)
         {
-
+            string mesaj_start = "Please, calculate something !";
+            TextBoxRezultat.Text = mesaj_start.ToString();
         }
     }
     }

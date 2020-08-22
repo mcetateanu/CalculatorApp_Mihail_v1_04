@@ -82,10 +82,11 @@
             // 
             // TextBoxRezultat
             // 
-            this.TextBoxRezultat.Location = new System.Drawing.Point(467, 351);
+            this.TextBoxRezultat.Location = new System.Drawing.Point(297, 301);
             this.TextBoxRezultat.Name = "TextBoxRezultat";
-            this.TextBoxRezultat.Size = new System.Drawing.Size(100, 22);
+            this.TextBoxRezultat.Size = new System.Drawing.Size(285, 22);
             this.TextBoxRezultat.TabIndex = 4;
+            this.TextBoxRezultat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TextBoxRezultat.TextChanged += new System.EventHandler(this.TextBoxRezultat_TextChanged);
             // 
             // NumericUpDownTermen1
@@ -94,14 +95,16 @@
             this.NumericUpDownTermen1.Name = "NumericUpDownTermen1";
             this.NumericUpDownTermen1.Size = new System.Drawing.Size(120, 22);
             this.NumericUpDownTermen1.TabIndex = 5;
+            this.NumericUpDownTermen1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumericUpDownTermen1.ValueChanged += new System.EventHandler(this.NumericUpDownTermen1_ValueChanged);
             // 
             // NumericUpDownTermen2
             // 
-            this.NumericUpDownTermen2.Location = new System.Drawing.Point(571, 83);
+            this.NumericUpDownTermen2.Location = new System.Drawing.Point(578, 83);
             this.NumericUpDownTermen2.Name = "NumericUpDownTermen2";
             this.NumericUpDownTermen2.Size = new System.Drawing.Size(120, 22);
             this.NumericUpDownTermen2.TabIndex = 6;
+            this.NumericUpDownTermen2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumericUpDownTermen2.ValueChanged += new System.EventHandler(this.NumericUpDownTermen2_ValueChanged);
             // 
             // FormCalculator
