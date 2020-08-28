@@ -28,6 +28,12 @@ namespace CalculatorApp_Mihail_v1_04
             };
         }
 
+    
+
+
+
+
+
         private void ButtonAboutForm_Click(object sender, EventArgs e)
         {
            
