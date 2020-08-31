@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
+
 
 namespace CalculatorApp_Mihail_v1_04
 {
@@ -20,11 +22,12 @@ namespace CalculatorApp_Mihail_v1_04
         {
             InitializeComponent();
         }
-       
 
-        private void FormCalculator_Load(object sender, EventArgs e)
+
+
+        public void FormCalculator_Load(object sender, EventArgs e)
         {
-           
+            
         }
 
         public void NumericUpDownTermen1_ValueChanged(object sender, EventArgs e)
@@ -71,6 +74,7 @@ namespace CalculatorApp_Mihail_v1_04
 
         private void ButonImpartire_Click(object sender, EventArgs e)
         {
+           
             decimal termen1 = NumericUpDownTermen1.Value;
             decimal termen2 = NumericUpDownTermen2.Value;
 
@@ -82,6 +86,10 @@ namespace CalculatorApp_Mihail_v1_04
             {
                 string rezultat_err = "Try again later, Ali...gator";
                 TextBoxRezultat.Text = rezultat_err.ToString();
+
+                var alarmSound = @"c:\temp\alarm.wav";
+                var wavPlayer = new SoundPlayer(alarmSound);
+                wavPlayer.PlaySync();
             }
             else TextBoxRezultat.Text = rezultat.ToString();
 
@@ -132,7 +140,15 @@ namespace CalculatorApp_Mihail_v1_04
         {
             string mesaj_start = "Please, calculate something !";
             TextBoxRezultat.Text = mesaj_start.ToString();
+
+
+            ToolTip toolTip1 = new ToolTip();
+            toolTip1.ShowAlways = true;
+            toolTip1.SetToolTip(ButonImpartire, "Ne pare rau, dar astazi nu impartim cu 0.");
+
         }
+
+
     }
     }
 

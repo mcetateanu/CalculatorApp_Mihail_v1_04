@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.ButonAdunare = new System.Windows.Forms.Button();
             this.ButonScadere = new System.Windows.Forms.Button();
             this.ButonInmultire = new System.Windows.Forms.Button();
@@ -35,6 +36,7 @@
             this.TextBoxRezultat = new System.Windows.Forms.TextBox();
             this.NumericUpDownTermen1 = new System.Windows.Forms.NumericUpDown();
             this.NumericUpDownTermen2 = new System.Windows.Forms.NumericUpDown();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.NumericUpDownTermen1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericUpDownTermen2)).BeginInit();
             this.SuspendLayout();
@@ -107,6 +109,12 @@
             this.NumericUpDownTermen2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NumericUpDownTermen2.ValueChanged += new System.EventHandler(this.NumericUpDownTermen2_ValueChanged);
             // 
+            // toolTip1
+            // 
+            this.toolTip1.IsBalloon = true;
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip1.ToolTipTitle = "nu cu 0";
+            // 
             // FormCalculator
             // 
             this.ClientSize = new System.Drawing.Size(959, 495);
@@ -137,5 +145,6 @@
         private System.Windows.Forms.TextBox TextBoxRezultat;
         private System.Windows.Forms.NumericUpDown NumericUpDownTermen1;
         private System.Windows.Forms.NumericUpDown NumericUpDownTermen2;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
