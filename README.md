@@ -2,7 +2,7 @@
 
  12.aug.2020 -start learning DotNET.
  
- Aceasta aplicatie deocamdata nu calculeaza nimic...nou. !!!
- Totusi maine este o noua zi!
+ Aceasta aplicatie prezinta un exemplu simplu de utilizare Windows Form App(.NET Framework) in C# !!!
+ 
 
 //will be continued...
